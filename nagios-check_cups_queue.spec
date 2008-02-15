@@ -1,6 +1,6 @@
 %define name	nagios-check_cups_queue
 %define version	20060627
-%define release	%mkrel 2
+%define release	%mkrel 3
 
 Name:		%{name}
 Version:	%{version}
@@ -12,7 +12,6 @@ URL:		http://dev.lusis.org/nagios/
 Source0:	http://dev.lusis.org/nagios/check_cups_queue.txt
 Requires:   cups-common
 Requires:   bc
-BuildArch:  noarch
 BuildRoot:  %{_tmppath}/%{name}-%{version}
 
 %description
