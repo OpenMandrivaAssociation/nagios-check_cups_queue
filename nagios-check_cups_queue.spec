@@ -1,6 +1,6 @@
 %define name	nagios-check_cups_queue
 %define version	20060627
-%define release	%mkrel 4
+%define release	%mkrel 5
 
 Name:		%{name}
 Version:	%{version}
@@ -30,10 +30,10 @@ install -d -m 755 %{buildroot}%{_libdir}/nagios/plugins
 install -m 755 %{SOURCE0} %{buildroot}%{_libdir}/nagios/plugins/check_cups_queue
 
 install -d -m 755 %{buildroot}%{_sysconfdir}/nagios/plugins.d
-cat > %{buildroot}%{_sysconfdir}/nagios/plugins.d/check_cups_queue.cfg <<EOF
+cat > %{buildroot}%{_sysconfdir}/nagios/plugins.d/check_cups_queue.cfg <<'EOF'
 define command{
 	command_name	check_cups_queue
-	command_line	%{_libdir}/nagios/plugins/check_cups_queue -H $HOSTADDRESS
+	command_line	%{_libdir}/nagios/plugins/check_cups_queue -H $HOSTADDRESS$
 }
 EOF
 
