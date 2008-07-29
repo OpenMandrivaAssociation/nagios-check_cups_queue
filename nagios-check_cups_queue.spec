@@ -1,6 +1,6 @@
 %define name	nagios-check_cups_queue
 %define version	20060627
-%define release	%mkrel 8
+%define release	%mkrel 9
 
 Name:		%{name}
 Version:	%{version}
