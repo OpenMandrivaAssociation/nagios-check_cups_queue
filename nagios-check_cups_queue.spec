@@ -48,3 +48,53 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %{_datadir}/nagios/plugins/check_cups_queue
 %config(noreplace) %{_sysconfdir}/nagios/plugins.d/check_cups_queue.cfg
+
+
+%changelog
+* Fri Dec 10 2010 Oden Eriksson <oeriksson@mandriva.com> 20060627-12mdv2011.0
++ Revision: 620432
+- the mass rebuild of 2010.0 packages
+
+* Mon Sep 14 2009 Thierry Vignaud <tv@mandriva.org> 20060627-11mdv2010.0
++ Revision: 440199
+- rebuild
+
+* Mon Dec 15 2008 Guillaume Rousse <guillomovitch@mandriva.org> 20060627-10mdv2009.1
++ Revision: 314634
+- now a noarch package
+
+* Tue Jul 29 2008 Thierry Vignaud <tv@mandriva.org> 20060627-9mdv2009.0
++ Revision: 253530
+- rebuild
+
+* Tue Jul 22 2008 Thierry Vignaud <tv@mandriva.org> 20060627-8mdv2009.0
++ Revision: 239729
+- rebuild
+
+* Wed Mar 05 2008 Guillaume Rousse <guillomovitch@mandriva.org> 20060627-6mdv2008.1
++ Revision: 179441
+- force Unix locales for extracting dates
+
+* Fri Feb 15 2008 Guillaume Rousse <guillomovitch@mandriva.org> 20060627-5mdv2008.1
++ Revision: 168928
+- fix configuration (thanks oden)
+
+* Fri Feb 15 2008 Guillaume Rousse <guillomovitch@mandriva.org> 20060627-4mdv2008.1
++ Revision: 168911
+- add a configuration file
+
+* Fri Feb 15 2008 Guillaume Rousse <guillomovitch@mandriva.org> 20060627-3mdv2008.1
++ Revision: 168798
+- not a noarch package, as nagios plugins installation directory is arch-dependant
+
+* Tue Feb 05 2008 Guillaume Rousse <guillomovitch@mandriva.org> 20060627-2mdv2008.1
++ Revision: 162717
+- fix dependencies
+
+* Tue Feb 05 2008 Guillaume Rousse <guillomovitch@mandriva.org> 20060627-1mdv2008.1
++ Revision: 162716
+- import nagios-check_cups_queue
+
+
+* Tue Feb 05 2008 Guillaume Rousse <guillomovitch@mandriva.org> 20060627-1mdv2008.1
+- first mandriva package
