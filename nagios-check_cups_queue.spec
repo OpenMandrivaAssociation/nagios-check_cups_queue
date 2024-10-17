@@ -8,7 +8,7 @@ Release:	%{release}
 Summary:	Nagios cups plugin
 Group:		Networking/Other
 License:	BSD
-URL:		http://dev.lusis.org/nagios/
+URL:		https://dev.lusis.org/nagios/
 Source0:	http://dev.lusis.org/nagios/check_cups_queue.txt
 Patch:      nagios/check_cups_queue-force-locales.patch
 Requires:   cups-common
